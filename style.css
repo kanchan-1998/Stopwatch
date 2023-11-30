@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d383a;
+    padding:30px 80px;
+    border-radius: 10px;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#circle{
+    padding: 0 10px 0 5px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #eaebe8;
+    border: 5px solid #1a66ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timebox,#timebox span{
+    width: 100%;
+    font-size: 44px;
+    font-weight: bold;
+    color: #2d383a;
+    text-align: center;
+    padding: 0 10px 0 5px;
+}
+#timebox span{
+    display: inline-block;
+    position: relative;
+    bottom: -4px;
+    color: #1a66ff;
+    font-weight: bold;
+    width: 50px;
+}
+#timebox .colon{
+    /* display: inline-block; */
+    position: relative;
+    bottom: -1px;
+    left: 9px;
+    color: #2d383a;
+    font-weight: bold;
+    width: 10px;
+    padding: 0 15px;
+}
+small{
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    bottom: -4px;
+    left: 6px;
+    width: 25px;
+}
+
+#btn-box{
+    border-radius: 5px;
+    background-color: #eaebe8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 15px;
+    gap: 40px;
+}
+
+.btn{
+    /* background-color: #2d383a; */
+    color:#1a66ff;
+    font-size: 18px;
+    padding: 4px 8px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+    border: 2px solid #1a66ff;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+li{
+    font-size: 18px;
+    font-weight:500;
+    color: ghostwhite;
+}
+
+@media screen and (max-width:500px) {
+    #timebox span{
+        font-size: 30px;
+        padding: 0 0 0 2px;
+    } 
+
+    #timebox .colon{
+        font-size: 30px;
+        padding: 0;
+    }
+    #timebox small{
+        font-size: 18px;
+    }
+
+    #main{
+        padding:30px 30px;
+    }
+}
