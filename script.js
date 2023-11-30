@@ -75,6 +75,10 @@ resetBtn.addEventListener("click",()=>{
     startBtn.innerHTML="START";
     check="stop"
     clearInterval(startWatch);
+    ms=0;
+    s=0;
+    m=0;
+    h=0;
     hr.innerHTML="00";
     min.innerHTML="00";
     sec.innerHTML="00";
